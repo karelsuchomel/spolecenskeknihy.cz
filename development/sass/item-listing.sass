@@ -1,0 +1,267 @@
+#columnMain_box
+	width: 723px
+	padding: 22px 0 14px 22px
+	float: left
+
+#columnMain_infopanel
+	width: 703px
+	float: left
+	.box
+		width: 232px
+		height: 186px
+		margin: 0 2px 0 0
+		background-color: #f2f2f2
+		float: left
+
+#columnMain_infopanel_icon1
+	width: 232px
+	height: 50px
+	background: transparent url('/img/icon_truck.png') no-repeat center bottom
+
+#columnMain_infopanel_icon2
+	width: 232px
+	height: 50px
+	background: transparent url('/img/icon_info.png') no-repeat center bottom
+
+#columnMain_infopanel_icon3
+	width: 232px
+	height: 50px
+	background: transparent url('/img/icon_book.png') no-repeat center bottom
+
+#columnMain_infopanel .box
+	.header
+		padding: 6px
+		color: #ba2a2a
+		font-size: 1.0em
+		font-weight: bold
+		text-align: center
+	.text
+		padding: 6px
+		color: #81756f
+		font-size: 0.875em
+		text-align: center
+
+#columnMain_box
+	p, address
+		margin: 0
+		padding: 0 0 1em 0
+		color: #3f3f3f
+
+$itemHeight: 216px
+
+.article_grid_l
+	position: relative
+	overflow: hidden
+	width: 344px
+	box-sizing: border-box
+	margin: 0 10px 9px 0
+	float: left
+	border: 1px solid #DDD
+	border-radius: 2px
+	.le
+		// DEACTIVATE .le
+		display: none
+		width: 6px
+		height: $itemHeight
+		background: transparent url(/img/article_edge_left.png) no-repeat left center
+		float: left
+	.c
+		width: 326px // 314 + 6 + 6
+		//height: $itemHeight
+		padding: 9px
+		// DEACTIVATE background image
+		//background: #ffffff url(/img/article_edge_centre.png) repeat-x left center
+		color: #42362f
+		//float: left
+	.re
+		display: none
+		width: 6px
+		height: $itemHeight
+		background: transparent url(/img/article_edge_right.png) no-repeat left center
+		float: left
+	.img_thumbnail
+		border: 1px solid #DDD
+		margin: 0px 9px 0 0
+		float: left
+		// item TAGs
+		.status_label
+			position: absolute
+			top: 5px
+			left: -25px
+			transform: rotate(-45deg)
+			width: 100px
+			line-height: 20px
+			font-size: 12px
+			color: white
+			text-align: center
+
+		// TAG: top
+		.status_label_1
+			background-color: green
+			
+		// TAG: new
+		.status_label_2
+			background-color: orange
+
+		// TAG: our recomendation
+		.status_label_3
+			background-color: olive
+
+		// TAG: discount
+		.status_label_4
+			background-color: red
+
+		.status_label_discount
+			display: none
+			position: absolute
+
+		.image
+			text-align: center
+			overflow: hidden
+			img
+				display: block
+				width: 111px
+				height: 147px
+
+	.info
+		width: 192px
+		float: left
+	.title1
+		width: 192px
+		font-size: 1em
+		font-weight: normal
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		color: #a20000
+		float: left
+		a
+			color: #a20000
+			&:hover
+				text-decoration: underline
+	.title2
+		width: 192px
+		font-size: .875em
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		float: left
+	.author
+		width: 192px
+		font-size: .875em
+		font-weight: normal
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		float: left
+	.basic_info
+		width: 192px
+		font-size: .875em
+		font-weight: normal
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		float: left
+		font-size: .75em
+		margin-top: 2px
+	.id
+		width: 192px
+		margin-top: 2px
+		float: left
+
+	// discount - label
+	.label_price_original, .value_price_original
+		width: 96px
+		font-size: .75em
+		margin-top: 12px
+		display: inline
+		float: left
+	.label_price_original
+		display: none
+		text-align: right
+	.value_price_original
+		text-align: left
+
+	// discount - value
+	.label_discount, .value_discount
+		width: 96px
+		margin-bottom: 5px
+		font-size: 16px
+		display: inline-block
+		float: left
+	.label_discount
+		display: none
+	.value_discount
+		float: left
+		clear: both
+
+	// price - label and value
+	.label_price, .value_price
+		font-size: 16px
+		bottom: 0px
+	.label_price
+		display: none
+		width: 85px
+		right: 120px
+		text-align: right
+	.value_price
+		margin-top: 12px
+		float: left
+
+	.label
+		display: none
+		width: 50px
+		margin-right: 4px
+		font-size: .75em
+		text-align: right
+		float: left
+	.value
+		display: none
+		width: 128px
+		font-size: .75em
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		float: left
+
+	// item buttons
+	.article_grid_buttons
+		padding: 9px 0px 0px
+		clear: both
+		&:after
+			content: ""
+			clear: both
+			display: block
+	.article_grid_buttons a
+		text-decoration: none
+		&:hover
+			text-decoration: none
+	.detail_button, .order_button
+		height: 30px
+		margin-right: 6px
+		display: block
+		float: left
+	.detail_button
+		background: transparent url(/img/btn_grid_detail.png) no-repeat center left
+		width: 71px
+		color: #393939
+	.order_button
+		background: transparent url(/img/btn_grid_add_to_basket.png) no-repeat center left
+		width: 103px
+		color: #ffffff
+		.label
+			width: auto
+			height: 30px
+			line-height: 30px
+			margin-right: 6px
+			font-size: 0.875em
+			display: block
+			float: right
+	.detail_button .label
+		width: auto
+		height: 30px
+		line-height: 30px
+		margin-right: 6px
+		font-size: 0.875em
+		display: block
+		float: right

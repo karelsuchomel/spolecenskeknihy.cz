@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://spolecenskeknihy.cz/resources/sitemap.xml

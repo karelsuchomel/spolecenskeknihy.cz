@@ -1,0 +1,680 @@
+// v. 1.0.7
+
+html
+  font-size: 16px
+
+body
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif
+  color: #000
+  background-color: #F2F2F2
+  margin: 0
+  padding: 0
+
+img
+  border: 0
+  margin: 0
+  padding: 0
+
+form, h1, h2, h3, h4, ul, li
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif
+  margin: 0
+  padding: 0
+
+ul
+  list-style-type: none
+
+a
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif
+  text-decoration: none
+  color: #3F3F3F
+  &:hover
+    text-decoration: underline
+    color: #ba2a2a
+
+h1
+  font-size: 2em
+
+h2
+  font-size: 1.3em
+
+h3
+  font-size: 1em
+
+input, textarea, button, select
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+input
+  &[type=radio]
+    margin: 0 2px 0 0
+  &[type=checkbox]
+    margin: 0 6px 0 0
+
+textarea:focus, input:focus
+  outline: 0
+
+address
+  font-style: normal
+
+fieldset
+  margin-left: 0
+  padding-top: 0.35em
+  padding-bottom: 0.625em
+  padding-left: 0
+  padding-right: 0.75em
+  border: none
+
+.radio_btn_option
+  display: inline-block
+  margin: 0 12px 0 0
+  float: left
+
+.radio_btn_group
+  height: 40px
+  line-height: 40px
+
+.float-l
+  float: left
+
+.float-r
+  float: right
+
+.margin
+  margin: 10px
+
+.margin_t_10
+  margin-top: 10px
+
+.margin_t_15
+  margin-top: 15px
+
+.margin_b_10
+  margin-bottom: 10px
+
+.margin_b_15
+  margin-bottom: 15px
+
+.align-r
+  text-align: right
+
+.align-l
+  text-align: left
+
+.align-t
+  vertical-align: top
+
+.align-b
+  vertical-align: bottom
+
+.no_wrap
+  white-space: nowrap
+
+.display_none
+  display: none
+
+.display_block
+  display: block
+
+.display_inline
+  display: inline
+
+.pointer_default
+  cursor: default
+
+.bold
+  font-weight: bold
+
+.width_50
+  width: 50%
+
+.width_100
+  width: 100%
+
+.link_text a
+  color: #000
+  text-decoration: none
+  &:hover
+    color: #d42e12
+    text-decoration: underline
+
+#flash_message, #flash_warning, #flash_error, #message
+  width: 745px
+  margin: 22px 0 0
+
+#flash_message .box, #flash_warning .box, #flash_error .box, #message .box
+  width: 652px
+  margin: 2px 0 2px 22px
+  padding: 11px 22px 11px 22px
+  font-size: 1.0em
+  border-radius: 7px
+  float: left
+
+#flash_message .box, #flash_warning .box
+  color: #3a87ad
+  background-color: #d9edf7
+  border: 1px solid #bce8f1
+
+#flash_error .box
+  color: #bf2d2d
+  background-color: #ffd1d1
+  border: 1px solid #ff7c7c
+
+#message .box
+  color: #3a87ad
+  background-color: #d9edf7
+  border: 1px solid #bce8f1
+
+.flash_error
+  color: red
+  display: block
+  float: left
+  margin: 5px 0 10px
+
+#envelope
+  background-color: #F2F2F2
+  text-align: left
+
+#page
+  position: relative
+  width: 100%
+  background: transparent url(/img/bg_page.jpg) repeat
+  clear: both
+
+#page_box
+  position: relative
+  width: 1038px
+  background: transparent url(/img/bg_page_box.png) repeat-y
+  margin: 0 auto
+
+#footer_desk_shadow_menu_decoration
+  position: absolute
+  top: -28px
+  left: -24px
+  width: 330px
+  height: 114px
+  background: transparent url(/img/decoration_menu_bottom.png) no-repeat
+
+#footer_desk_shadow_decoration_girl
+  position: absolute
+  top: -68px
+  left: 840px
+  width: 189px
+  height: 105px
+  background: transparent url(/img/decoration_image_girl.png) no-repeat
+  float: left
+
+#footer_desk_shadow_decoration_bm
+  position: absolute
+  top: 54px
+  left: 982px
+  width: 51px
+  height: 78px
+  background: transparent url(/img/decoration_image_bm.png) no-repeat
+
+#enclose
+  width: 1028px
+  float: left
+  position: relative
+
+  &:before
+    position: absolute
+    content: ""
+    top: -232px
+    right: -4px
+    height: 148px
+    width: 248px
+    background:
+      image: url('/img/decoration_images.png')
+
+#columnMain
+  width: 745px
+  float: right
+  text-align: left
+
+#columnMain_path
+  width: 745px
+  height: 48px
+  background: transparent url('/img/bg_breadcrumbs_line.png') repeat-x bottom
+  .box
+    width: 701px
+    height: 42px
+    line-height: 42px
+    margin: 0 22px 0 22px
+    font-size: 1.125em
+    font-weight: bold
+    color: #940000
+
+#columnMain .options
+  width: 498px
+  height: 42px
+  border: 1px solid #b0b0b0
+  margin: 0 0 3px
+  padding: 2px
+
+.article_detail
+  width: 698px
+  margin: 0 10px 0 0
+  color: #4c3d32
+  float: left
+  .img_thumbnail
+    border: 2px solid #65543f
+    margin: 6px 1em 0.5em 0
+    float: left
+    .image
+      text-align: center
+      overflow: hidden
+      img
+        display: block
+  .title1
+    line-height: 1.0em
+    font-size: 1.5em
+    font-weight: bold
+    color: #a20000
+    a
+      color: #a20000
+      &:hover
+        text-decoration: underline
+  .title2
+    font-size: 1.250em
+  .author
+    font-size: 1.0em
+    font-weight: normal
+    margin: 1em 0 0
+  .basic_info
+    font-size: 0.875em
+  .annotation
+    font-size: 1.0em
+    margin: 1em 0 0
+
+.annotation ul
+  list-style-type: disc
+  margin: 0 0 0 1em
+
+.article_detail
+  .bottom_box
+    width: 698px
+    margin: 0.5em 0 0 0
+    float: left
+    .detail
+      width: 200px
+      padding: 14px 5px 14px 5px
+      color: #4f4540
+      background-color: #faefe1
+      border: 1px solid #e7ccab
+      border-radius: 3px
+      float: left
+  .detail
+    .header
+      width: 200px
+      font-size: 1.0em
+      font-weight: bold
+      color: #940000
+      float: left
+    .content
+      width: 200px
+      font-size: 0.875em
+      line-height: 1em
+      margin: 8px 0 0 0
+      color: #4f4540
+      float: left
+    table
+      border: 0
+  .bottom_box .detail_order_button
+    width: 450px
+    padding: 12px
+    font-size: 1.0em
+    font-weight: bold
+    color: #3d1819
+    background-color: #faefe1
+    border: 1px solid #e7ccab
+    border-radius: 3px
+    float: right
+    a:hover
+      color: #3e3e3e
+
+.detail_order_button .label
+  height: 34px
+  line-height: 34px
+  float: left
+
+.button_back, .button_forward
+  margin: 0
+  padding: 0
+  border: none
+  background: none
+  float: left
+  cursor: pointer
+
+.button_back .c, .button_forward .c
+  height: 34px
+  line-height: 34px
+  padding: 0 10px 0 10px
+  font-size: 16px
+  font-weight: bold
+  text-shadow: 1px 1px 1px #808080
+  color: #ffffff
+  float: left
+
+.button_back
+  .le
+    display: block
+    width: 17px
+    height: 34px
+    background: transparent url(/img/btn_back_edge_left.png) no-repeat left center
+    float: left
+  .c
+    display: block
+    background: transparent url(/img/btn_back_centre.png) repeat-x left center
+    float: left
+  .re
+    display: block
+    width: 4px
+    height: 34px
+    background: transparent url(/img/btn_back_edge_right.png) no-repeat left center
+    float: left
+
+.button_forward
+  .le
+    display: block
+    width: 5px
+    height: 34px
+    background: transparent url(/img/btn_forward_edge_left.png) no-repeat left center
+    float: left
+  .c
+    display: block
+    background: transparent url(/img/btn_forward_centre.png) repeat-x left center
+  .re
+    display: block
+    width: 19px
+    height: 34px
+    background: transparent url(/img/btn_forward_edge_right.png) no-repeat left center
+    float: left
+
+.article_detail .bottom_box .detail_order_contact
+  width: 450px
+  padding: 12px
+  font-size: 1.0em
+  font-weight: bold
+  color: #ae0000
+  float: right
+
+.detail_order_contact .email
+  color: #347ea3
+
+.basket_items_table, .basket_sum_table
+  width: 100%
+  border-collapse: separate
+  border-spacing: 0
+
+.basket_items_table
+  th
+    font-weight: bold
+    text-shadow: 1px 1px 1px #808080
+    padding: 10px
+    border-top: 1px solid #bdd73e
+    border-bottom: 1px solid #bdd73e
+    color: #ffffff
+    background: transparent url('/img/bg_basket_table_thead.png') repeat
+  .border_l
+    border-left: 1px solid #bdd73e
+  .border_r
+    border-right: 1px solid #bdd73e
+  tbody td
+    padding: 10px
+    border-top: 3px solid #ffffff
+    border-bottom: 1px solid #dbdcd6
+    background-color: #e5e7dd
+  tfoot td
+    padding: 10px
+    border-top: 3px solid #ffffff
+    border-bottom: 1px solid #c0c2ba
+    background-color: #cfd1c8
+    color: #3f3f3f
+    font-weight: bold
+  .count
+    width: 30px
+    height: 1.5em
+    padding: 0 2px 0 2px
+    text-align: right
+    border: 1px solid #c7c9c0
+
+.basket_sum_table
+  tbody td
+    padding: 5px 10px 5px 10px
+    border-bottom: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #3f3f3f
+  tfoot td
+    padding: 10px
+    border-bottom: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #3f3f3f
+    font-weight: bold
+
+.basket_detail, .order_detail
+  width: 698px
+  color: #4c3d32
+  float: left
+
+.basket_special_actions
+  width: 698px
+  padding: 16px 0 10px 0
+  border-bottom: 1px solid #eaeaea
+  float: left
+
+.basket_special_message
+  width: 698px
+  padding: 16px 10px 10px 10px
+  border-bottom: 1px solid #eaeaea
+  float: left
+
+.empty_basket
+  padding-left: 24px
+  margin-left: 10px
+  font-size: .875em
+  color: #5e8ba7
+  background: transparent url('/img/icon_empty_basket.png') no-repeat left center
+  text-decoration: underline
+
+.basket_special_actions
+  .label
+    font-size: .875em
+    font-weight: bold
+  .label_select
+    color: #d30000
+    font-weight: bold
+  .more_info_link
+    font-size: .875em
+    color: #5e8ba7
+    text-decoration: underline
+    &:hover
+      color: #ba2a2a
+      text-decoration: underline
+  .select_order_type
+    color: #ba2a2a
+
+.order_content
+  margin-bottom: 20px
+
+.basket_detail .bottom_box, .order_detail .bottom_box
+  width: 698px
+  margin: 1.0em 0 0 0
+  float: left
+
+.basket_detail .bottom_box_s, .order_detail .bottom_box_s
+  width: 698px
+  margin: 0
+  padding: 5px 10px 5px 10px
+  float: left
+
+#page
+  margin-top: 127px
+  &:before
+    position: absolute
+    z-index: 0
+    content: ""
+    top: -127px
+    left: 0
+    height: 127px
+    width: 100%
+    background:
+      image: url('/img/top-shelf-bg.png')
+      repeat: repeat-x
+
+#page .clear_both, #footer_links .clear_both
+  width: 1038px
+  height: 0
+  line-height: 0
+  font-size: 0
+  clear: both
+
+.input_frm_s, .input_frm_m, .input_frm_l
+  height: 1.750em
+  line-height: 1.750em
+  font-size: 0.875em
+  padding: 0 2px 0 2px
+
+.input_frm_s
+  width: 60px
+
+.input_frm_m
+  width: 180px
+
+.input_frm_l
+  width: 244px
+
+.select_frm_l
+  width: 244px
+  height: 1.750em
+  line-height: 1.750em
+  font-size: 0.875em
+  padding: 0.125em 2px 0 2px
+
+.textarea_frm
+  width: 244px
+  height: 6em
+  padding: 0.125em
+
+#columnRight
+  float: right
+  width: 188px
+  height: 800px
+  text-align: left
+  margin-right: 10px
+  border: 1px solid #B0B0B0
+  display: none
+
+#columnMain_pagination
+  width: 679px
+  padding: 0 44px 110px 22px
+  float: left
+
+.pagination_status
+  height: 32px
+  line-height: 32px
+  font-size: .875em
+  color: #887464
+  float: left
+
+.pagination
+  text-align: center
+  height: 32px
+  float: right
+
+.pagination_rect
+  width: 30px
+  height: 30px
+  line-height: 30px
+  font-size: .875em
+  border: 1px solid #dddddd
+  border-right: 0px
+  float: left
+  &:hover
+    background-color: #f5f5f5
+
+.pagination_inactive:hover
+  background-color: transparent
+
+.pagination_first
+  border-right: 0px
+
+.pagination_last
+  border-right: 1px solid #dddddd
+
+.pagination_selected
+  color: #b51c1c
+  background-color: #f5f5f5
+
+#footer_desk_shadow, #footer_links, #footer_info, #footer
+  min-width: 1038px
+  color: #000
+  text-align: left
+  margin: 0 auto
+
+#footer_desk_shadow
+  height: 15px
+  background: transparent url(/img/bg_footer_desk_shadow.png) repeat-x
+
+#footer_links
+  background: transparent url(/img/bg_footer_links.png) repeat
+  .info_block
+    width: 243px
+    margin: 24px 0 0 16px
+    float: left
+  .info_block_header
+    color: #a0bd25
+    padding: 0 0 0 4px
+    font-size: 1.125em
+    font-weight: bold
+    height: 1.75em
+    background: transparent url(/img/bg_info_block_header.png) no-repeat bottom left
+  .info_block_content
+    color: #4b3f3f
+    margin: 10px 0 10px 4px
+    line-height: 1.5em
+    font-size: .875em
+    float: left
+    .item
+      display: block
+      width: 243px
+      padding: 0 0 0 14px
+      float: left
+  a
+    font-size: .875em
+    font-weight: bold
+    color: #724c43
+    background: url(/img/link_arrow_right.gif) no-repeat left center
+    &:hover
+      color: #82131c
+      background: url(/img/link_arrow_right_hover.gif) no-repeat left center
+  .mail a
+    font-size: 1em
+    font-weight: normal
+    background: transparent
+    &:hover
+      font-size: 1em
+      font-weight: normal
+      background: transparent
+
+#footer_info
+  height: 28px
+  background: transparent url(/img/bg_footer_info.png) repeat-x
+  .copy, .authors
+    height: 28px
+    line-height: 28px
+    font-size: 0.688em
+    color: #704d39
+  .copy
+    float: left
+    margin: 0 0 0 16px
+  .authors
+    float: right
+    margin: 0 16px 0 0
+
+#footer
+  height: 13px
+  background: transparent url(/img/bg_footer.png) repeat-x

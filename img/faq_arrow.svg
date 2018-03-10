@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="431"
+   height="41"
+   viewBox="0 0 431 40.999999"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="faq_arrow.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="203.9541"
+     inkscape:cy="-51.225998"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(383.77359,-178.98584)">
+    <path
+       style="opacity:1;fill:#e0e8c8;fill-opacity:1;stroke:#d5d5d4;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5.4000001;stroke-opacity:1"
+       d="m -379.21771,179.48583 201.13004,0 205.185901,0 19.431061,20 -19.431061,20 -205.185901,0 -201.0388,0 c -2.38429,0 -4.14712,-1.94521 -4.14712,-3.73302 l 0,-16.26698 0,-15.91685 c 0,-2.32948 1.71589,-4.08315 4.05588,-4.08315 z"
+       id="rect4166"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.40287971px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4c4a4d;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="-365.23584"
+       y="207.54605"
+       id="text4169"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0139384,0.98625321)"><tspan
+         sodipodi:role="line"
+         id="tspan4171"
+         x="-365.23584"
+         y="207.54605"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.375px;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#4c4a4d;fill-opacity:1;"
+         dx="0">Objednávky, dotazy a veškeré poptávky rádi vyřídíme na</tspan></text>
+  </g>
+</svg>

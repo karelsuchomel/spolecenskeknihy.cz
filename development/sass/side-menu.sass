@@ -1,0 +1,240 @@
+#columnLeft
+	width: 283px
+	color: #56595e
+	text-align: left
+	float: left
+	margin-top: -73px
+	padding-top: 3px
+	position: relative
+	z-index: 1
+		
+
+	// top shelf fold graphic
+	&:after
+		position: absolute
+		content: ""
+		top: -43px
+		left: 5px
+		height: 43px
+		width: 302px
+		background:
+			image: url('/img/decoration_menu_top.png')
+
+	// side menu background
+	&:before
+		position: absolute
+		content: ""
+		width: 294px
+		top: 0px
+		right: -11px
+		bottom: 0px
+		left: 0px
+		z-index: -1
+		background:
+			image: url(/img/bg_menu.png)
+			repeat: repeat-y
+
+.menu_header
+	width: 208px
+	float: left
+	font-size: 1.357em
+	line-height: 25px
+	font-weight: 700
+	color: #940000
+	border-bottom: 1px solid #e6ddc8
+	margin: 0 0 0 10px
+	padding: 13px 32px
+
+.menu_items
+	a
+		width: 207px
+		float: left
+		font-size: 1em
+		font-weight: 700
+		color: #3c251f
+		margin: 0 0 0 10px
+		padding: 6px 32px
+	.menu_items
+		width: 200px
+		margin: 0 0 0 10px
+		padding: 3px 10px
+
+.menu_item a
+	color: #3F3F3F
+	background: url(/img/menu_arrow_right.gif) no-repeat 250px center
+	border-top: 1px solid transparent
+	border-right: 1px solid transparent
+	border-bottom: 1px solid #e6ddc8
+	border-left: 1px solid transparent
+	&:hover
+		color: #fff
+		text-decoration: none
+		background: url(/img/menu_arrow_right_hover.gif) no-repeat 250px center, url(/img/bg_menu_item_hover_left.gif) repeat-y, url(/img/bg_menu_item_hover.gif) repeat 14px
+		background-color: #A0BD25
+		border-top: 1px solid #bdd73e
+		border-right: 1px solid #b9cd89
+		border-bottom: 1px solid #b0cf28
+		border-left: 1px solid #bdd73e
+
+.menu_items .selected a
+	color: #fff
+	text-decoration: none
+	background: url(/img/menu_arrow_right_hover.gif) no-repeat 250px center, url(/img/bg_menu_item_hover_left.gif) repeat-y, url(/img/bg_menu_item_hover.gif) repeat 14px
+	background-color: #A0BD25
+	border-top: 1px solid #bdd73e
+	border-right: 1px solid #b9cd89
+	border-bottom: 1px solid #b0cf28
+	border-left: 1px solid #bdd73e
+	&:hover
+		color: #fff
+		text-decoration: none
+		background: url(/img/menu_arrow_right_hover.gif) no-repeat 250px center, url(/img/bg_menu_item_hover_left.gif) repeat-y, url(/img/bg_menu_item_hover.gif) repeat 14px
+		background-color: #A0BD25
+		border-top: 1px solid #bdd73e
+		border-right: 1px solid #b9cd89
+		border-bottom: 1px solid #b0cf28
+		border-left: 1px solid #bdd73e
+
+.menu_item_offset
+	display: block
+	width: 20px
+	height: 1px
+	float: left
+
+.menu_divider
+	margin: 24px 0 6px 10px
+	float: left
+	.le
+		height: 43px
+		width: 7px
+		background: transparent url(/img/menu_divider_edge_left.png) no-repeat left center
+		float: left
+	.c
+		height: 43px
+		line-height: 40px
+		padding: 0 2px 0 2px
+		background: transparent url(/img/menu_divider_centre.png) repeat-x left center
+		float: left
+	.re
+		height: 43px
+		width: 7px
+		background: transparent url(/img/menu_divider_edge_right.png) no-repeat left center
+		float: left
+	.label
+		width: 255px
+		height: 43px
+		line-height: 43px
+		color: #26300a
+		font-size: 1.375em
+		text-align: center
+
+.menu_article_divider
+	margin: 0 0 0 10px
+	width: 273px
+	height: 12px
+	background: transparent url(/img/bg_menu_item_divider.png) repeat-x
+	float: left
+
+.menu_article
+	width: 237px
+	margin: 0 0 0 10px
+	padding: 8px 9px 8px 27px
+	float: left
+	&:hover
+		width: 246px
+		padding: 8px 0px 8px 27px
+		background: #f8f1e0 url(/img/bg_menu_article_basket.png) no-repeat center right
+
+.menu_article_labels:hover > div
+	text-decoration: underline
+
+.menu_article
+	a:hover
+		text-decoration: none
+	&:hover
+		.menu_article_title, .menu_article_author
+			width: 160px
+		.menu_article_labels
+			width: 210px
+
+.menu_article_labels
+	float: left
+
+.menu_article:hover .menu_basket
+	display: block
+	float: left
+
+.menu_basket
+	width: 36px
+	height: 58px
+	float: left
+	display: none
+
+.menu_article_image
+	width: 34px
+	height: 56px
+	margin: 0 10px 0 0
+	border: 1px solid #666666
+	float: left
+
+	&:before
+		display: none
+
+.menu_article_title
+	width: 190px
+	height: 14px
+	line-height: 14px
+	font-size: .813em
+	font-weight: bold
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	color: #8c0000
+	float: left
+
+.menu_article_author
+	width: 190px
+	height: 14px
+	line-height: 14px
+	margin: 1px 0 0 0
+	font-size: .813em
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	color: #553c3c
+	float: left
+
+.menu_article_price
+	min-width: 52px
+	height: 17px
+	line-height: 17px
+	margin: 12px 2px 0 0
+	padding: 0 6px 0 6px
+	font-size: .813em
+	font-weight: bold
+	text-align: right
+	color: #ffffff
+	background-color: #9b1104
+	float: left
+
+.menu_article_discount
+	min-width: 64px
+	height: 17px
+	line-height: 17px
+	margin: 12px 2px 0 0
+	padding: 0 6px 0 6px
+	font-size: .813em
+	font-weight: bold
+	text-align: right
+	color: #2b2828
+	background-color: #e1b400
+	float: left
+
+.menu_article_price, .menu_article_discount
+	text-decoration: none !important
+
+.menu_footer
+	margin: 0 0 0 10px
+	width: 273px
+	height: 30px
+	float: left
