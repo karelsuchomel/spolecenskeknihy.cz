@@ -59,7 +59,8 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE. */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -103,7 +104,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -261,7 +263,8 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers. */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -295,7 +298,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-. */
 [type="checkbox"], [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -552,7 +556,8 @@ fieldset {
   margin: 2px 0 2px 22px;
   padding: 11px 22px 11px 22px;
   font-size: 1em;
-  border-radius: 7px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
   float: left;
 }
 
@@ -649,21 +654,6 @@ fieldset {
   text-align: left;
 }
 
-#columnMain_path {
-  width: 745px;
-  height: 48px;
-  background: transparent url("/img/bg_breadcrumbs_line.png") repeat-x bottom;
-}
-#columnMain_path .box {
-  width: 701px;
-  height: 42px;
-  line-height: 42px;
-  margin: 0 22px 0 22px;
-  font-size: 1.125em;
-  font-weight: bold;
-  color: #940000;
-}
-
 #columnMain .options {
   width: 498px;
   height: 42px;
@@ -734,7 +724,8 @@ fieldset {
   color: #4f4540;
   background-color: #faefe1;
   border: 1px solid #e7ccab;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   float: left;
 }
 .article_detail .detail .header {
@@ -763,7 +754,8 @@ fieldset {
   color: #3d1819;
   background-color: #faefe1;
   border: 1px solid #e7ccab;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   float: right;
 }
 .article_detail .bottom_box .detail_order_button a:hover {
@@ -1765,7 +1757,8 @@ fieldset {
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   color: #8c0000;
   float: left;
 }
@@ -1778,7 +1771,8 @@ fieldset {
   font-size: 0.813em;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   color: #553c3c;
   float: left;
 }
@@ -1826,6 +1820,7 @@ fieldset {
   width: 723px;
   padding: 22px 0 14px 22px;
   float: left;
+  border-top: 1px solid #DDD;
 }
 
 #columnMain_infopanel {
@@ -1882,11 +1877,13 @@ fieldset {
   position: relative;
   overflow: hidden;
   width: 344px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 10px 9px 0;
   float: left;
   border: 1px solid #DDD;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 .article_grid_l .le {
   display: none;
@@ -1916,7 +1913,9 @@ fieldset {
   position: absolute;
   top: 5px;
   left: -25px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 100px;
   line-height: 20px;
   font-size: 12px;
@@ -1958,7 +1957,8 @@ fieldset {
   font-weight: normal;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   color: #a20000;
   float: left;
 }
@@ -1973,7 +1973,8 @@ fieldset {
   font-size: 0.875em;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   float: left;
 }
 .article_grid_l .author {
@@ -1982,7 +1983,8 @@ fieldset {
   font-weight: normal;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   float: left;
 }
 .article_grid_l .basic_info {
@@ -1991,7 +1993,8 @@ fieldset {
   font-weight: normal;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   float: left;
   font-size: 0.75em;
   margin-top: 2px;
@@ -2057,7 +2060,8 @@ fieldset {
   font-size: 0.75em;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   float: left;
 }
 .article_grid_l .article_grid_buttons {
@@ -2110,8 +2114,26 @@ fieldset {
   float: right;
 }
 
+#columnMain_path {
+  padding: 7px 22px;
+  display: inline-box;
+  float: left;
+}
+#columnMain_path .box {
+  padding: 6px 6px 6px 0px;
+  display: inline-box;
+  font-size: 13px;
+  line-height: 14px;
+  color: #940000;
+}
+#columnMain_path .box > span > span.path_separator {
+  color: #3F3F3F;
+}
+
 #columnMain_options {
-  padding: 22px 0px 14px 22px;
+  padding: 7px 22px;
+  display: inline-box;
+  float: right;
 }
 #columnMain_options:after {
   content: "";
@@ -2123,15 +2145,18 @@ fieldset {
   float: left;
   font-size: 12px;
   line-height: 14px;
-  padding: 6px 8px;
+  padding: 6px 6px 6px 0px;
+  margin-right: 6px;
 }
 #columnMain_options .status_label {
   float: left;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 #columnMain_options .status_label > a {
+  display: block;
   padding: 6px 8px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   color: #777;
   font-size: 12px;
   line-height: 14px;
