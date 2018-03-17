@@ -52,8 +52,6 @@
 		padding: 0 0 1em 0
 		color: #3f3f3f
 
-$itemHeight: 216px
-
 .article_grid_l
 	position: relative
 	overflow: hidden
@@ -74,8 +72,7 @@ $itemHeight: 216px
 		padding: 9px
 
 		.img_thumbnail_wrap
-			position: relative
-			margin-bottom: 10px
+			padding-bottom: 10px
 
 			// &:after
 			// 	content: ""
@@ -98,29 +95,40 @@ $itemHeight: 216px
 		// item TAGs
 		.status_label
 			position: absolute
-			top: 0px
-			left: -10px
-			width: 100px
-			line-height: 20px
-			font-size: 12px
-			color: white
 			text-align: center
 
 		// TAG: top
-		.status_label_1
-			background-color: green
+		.status_label_2
+			bottom: 68px
+			left: 10px
+			border-radius: 2px
+			padding: 0px 10px 1px
+			font-size: 13px
+			line-height: 18px
+			color: white
+			background-color: #b71540
 			
 		// TAG: new
-		.status_label_2
-			background-color: orange
+		.status_label_1
+			@extend .status_label_2
+			background-color: #0a3d62
 
 		// TAG: our recomendation
 		.status_label_3
-			background-color: olive
+			@extend .status_label_2
+			background-color: #fa983a
 
 		// TAG: discount
 		.status_label_4
-			background-color: red
+			z-index: 2
+			font-size: 0px
+			line-height: 0px
+			padding-bottom: 62px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			width: 100%
+			background-color: #FFF6A1
 
 		.status_label_discount
 			display: none
@@ -153,77 +161,75 @@ $itemHeight: 216px
 		color: #555
 		font-size: 15px
 		line-height: 17px
-		max-height: 34px
-		overflow-y: hidden
+		max-height: 17px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
 		margin-bottom: 5px
 	.author
-		width: 192px
-		font-size: .875em
-		font-weight: normal
+		font-size: 15px
+		line-height: 17px
+		font-weight: 400
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis
-		float: left
 	.basic_info
-		width: 192px
-		font-size: .875em
-		font-weight: normal
+		font-size: 13px
+		line-height: 15px
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis
-		float: left
-		font-size: .75em
 		margin-top: 2px
+		color: #555
+		> a
+			color: #555
+
 	.id
 		width: 192px
 		margin-top: 2px
 		float: left
 
-	// discount - label
-	.label_price_original, .value_price_original
-		width: 96px
-		font-size: .75em
-		margin-top: 12px
-		display: inline
-		float: left
-	.label_price_original
-		display: none
-		text-align: right
-	.value_price_original
-		text-align: left
-
-	// discount - value
-	.label_discount, .value_discount
-		width: 96px
-		margin-bottom: 5px
-		font-size: 16px
-		display: inline-block
-		float: left
-	.label_discount
-		display: none
-	.value_discount
-		float: left
-		clear: both
-
-	// price - label and value
-	.label_price, .value_price
-		font-size: 16px
-		bottom: 0px
+	// price - label
 	.label_price
 		display: none
-		width: 85px
-		right: 120px
-		text-align: right
+
+	// price - value
 	.value_price
 		position: absolute
 		z-index: 2
-		bottom: 10px
+		bottom: 14px
 		left: 10px
 		font-size: 15px
-		line-height: 28px
-
+		line-height: 30px
 		strong
-			font-size: 20px
+			font-size: 22px
+
+	// discount - label
+	.label_price_original, .label_discount
+		display: none
+		
+	// discount - value
+	.value_price_original
+		@extend .value_price
+		font-size: 13px
+		line-height: 15px
+		bottom: 40px
+		s
+			text-decoration: none !important
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 110%
+			height: 1px
+			background: rgba(0,0,0,0.8)
+			top: 7px
+			left: -2px
+			transform: rotate(-8deg)
+
+	.value_discount
+		@extend .value_price
+		color: #eb2f06
 
 	.label
 		display: none
@@ -243,17 +249,28 @@ $itemHeight: 216px
 
 	// item buttons
 	.article_grid_buttons
+		&:before
+			position: absolute
+			z-index: 0
+			content: ""
+			display: block
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background: #f5f5f5
+
 		position: absolute
-		z-index: 1
 		width: calc(100%)
-		height: 50px
+		height: 62px
 		bottom: 0px
 		right: 0px
-		background: #f5f5f5
+
 		&:after
 			content: ""
 			clear: both
 			display: block
+
 	.article_grid_buttons a
 		text-decoration: none
 		&:hover
@@ -263,18 +280,23 @@ $itemHeight: 216px
 		display: none
 
 	.order_button
-		margin-top: 10px
+		position: relative
+		z-index: 3
+		margin-top: 16px
 		margin-right: 10px
 		height: 30px
 		display: block
 		float: right
 		width: 98px
 		background: linear-gradient(white, #DDD)
+		box-shadow: 0px 1px 0px 0px #AAA
 		border: 1px solid #DDD
 		border-radius: 2px
 
 		&:active
-			background: linear-gradient(#DDD, white)
+			margin-top: 18px
+			background: linear-gradient(white, #EEE)
+			box-shadow: 0px 0px 0px 0px #AAA
 
 		&:before
 			content: ""
